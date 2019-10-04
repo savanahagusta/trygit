@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id jur:</strong>
+  <%= @major.id_jur %>
+</p>
+
+<p>
+  <strong>Jurusan:</strong>
+  <%= @major.jurusan %>
+</p>
+
+<p>
+  <strong>Prodi:</strong>
+  <%= @major.prodi %>
+</p>
+
+<%= link_to 'Edit', edit_major_path(@major) %> |
+<%= link_to 'Back', majors_path %>

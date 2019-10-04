@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_dos: 1
+  nama: MyString
+  alamat: MyString
+
+two:
+  id_dos: 1
+  nama: MyString
+  alamat: MyString

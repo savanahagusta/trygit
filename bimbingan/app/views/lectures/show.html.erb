@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id dos:</strong>
+  <%= @lecture.id_dos %>
+</p>
+
+<p>
+  <strong>Nama:</strong>
+  <%= @lecture.nama %>
+</p>
+
+<p>
+  <strong>Alamat:</strong>
+  <%= @lecture.alamat %>
+</p>
+
+<%= link_to 'Edit', edit_lecture_path(@lecture) %> |
+<%= link_to 'Back', lectures_path %>

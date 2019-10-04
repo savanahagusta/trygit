@@ -1,0 +1,47 @@
+<%= form_with(model: murid, local: true) do |form| %>
+  <% if murid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(murid.errors.count, "error") %> prohibited this murid from being saved:</h2>
+
+      <ul>
+      <% murid.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nim %>
+    <%= form.number_field :nim %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nama %>
+    <%= form.text_field :nama %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kelas %>
+    <%= form.text_field :kelas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alamat %>
+    <%= form.text_field :alamat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :major_id %>
+    <%= form.number_field :major_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lecture_id %>
+    <%= form.number_field :lecture_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Murid</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nim</th>
+      <th>Nama</th>
+      <th>Kelas</th>
+      <th>Alamat</th>
+      <th>Major</th>
+      <th>Lecture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @murids.each do |murid| %>
+      <tr>
+        <td><%= murid.nim %></td>
+        <td><%= murid.nama %></td>
+        <td><%= murid.kelas %></td>
+        <td><%= murid.alamat %></td>
+        <td><%= Major.find(murid.major_id).jurusan %></td>
+        <td><%= Lecture.find(murid.lecture_id).nama %></td>
+        <td><%= link_to 'Show', murid %></td>
+        <td><%= link_to 'Edit', edit_murid_path(murid) %></td>
+        <td><%= link_to 'Destroy', murid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Murid', new_murid_path %>
