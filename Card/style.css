@@ -1,0 +1,89 @@
+body {
+    background: hotpink; 
+    filter: alpha(opacity=50);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h5,p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(22, 22, 22);
+}
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.jumbotron {
+    color: ghostwhite;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(22, 22, 22);
+    border-color: white;
+    border-width: 3rem;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: yellow; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .btn-yellow {
+    background-color: black; 
+    color: white; 
+    border: 2px solid palevioletred;
+  }
+  
+  .btn-yellow:hover {
+    background-color: palevioletred;
+    color: black;
+    font-weight: bold;
+  }
+  .wadah-mengetik
+{
+ font-size: 22px;
+ width: 740px;
+ white-space:nowrap;
+ overflow:hidden;
+ -webkit-animation: ketik 5s steps(50, end);
+ animation: ketik 5s steps(50, end);
+}
+
+@keyframes ketik{
+  from { width: 0; }
+}
+
+@-webkit-keyframes ketik{
+  from { width: 0; }
+}
